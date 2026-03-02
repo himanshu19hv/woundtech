@@ -36,7 +36,7 @@ const Layout = ({ children, activeTab, onTabChange }) => {
                   activeTab === tab.id
                     ? 'text-white'
                     : 'text-[var(--text-muted)] hover:text-white'
-                }`}
+                } hover:cursor-pointer`}
               >
                 {activeTab === tab.id && (
                   <motion.div
@@ -52,7 +52,7 @@ const Layout = ({ children, activeTab, onTabChange }) => {
           </nav>
 
           <div className="flex items-center gap-3">
-            <button className="p-2 text-[var(--text-muted)] hover:text-white transition-colors relative">
+            <button className="p-2 text-[var(--text-muted)] hover:text-white transition-colors relative hover:cursor-pointer">
               <Bell size={20} />
               <span className="absolute top-2 right-2 w-2 h-2 bg-rose-500 rounded-full border-2 border-[var(--surface)]"></span>
             </button>
@@ -64,7 +64,7 @@ const Layout = ({ children, activeTab, onTabChange }) => {
               </div>
               <button 
                 onClick={logout}
-                className="w-10 h-10 rounded-full border border-[var(--border)] flex items-center justify-center hover:bg-white/5 transition-all group"
+                className="w-10 h-10 rounded-full border border-[var(--border)] flex items-center justify-center hover:bg-white/5 transition-all group hover:cursor-pointer"
               >
                 <LogOut size={18} className="text-[var(--text-muted)] group-hover:text-rose-400" />
               </button>

@@ -77,7 +77,7 @@ const CliniciansPage = () => {
               onChange={(e) => setSearchQuery(e.target.value)}
             />
           </div>
-          <Button onClick={() => setIsModalOpen(true)} className="flex items-center gap-2 shrink-0">
+          <Button onClick={() => setIsModalOpen(true)} className="flex items-center gap-2 shrink-0 hover:cursor-pointer">
             <UserPlus size={16} />
             <span className="hidden sm:inline">Add Clinician</span>
           </Button>
@@ -181,13 +181,13 @@ const CliniciansPage = () => {
             <button 
               type="button" 
               onClick={() => setIsModalOpen(false)} 
-              className="flex-1 px-6 py-4 rounded-2xl border border-[var(--border)] font-bold text-sm tracking-widest text-[var(--text-muted)] hover:bg-white/5 transition-all"
+              className="flex-1 px-6 py-4 rounded-2xl border border-[var(--border)] font-bold text-sm tracking-widest text-[var(--text-muted)] hover:bg-white/5 transition-all hover:cursor-pointer"
             >
               Cancel
             </button>
             <button 
               type="submit" 
-              className="flex-1 px-6 py-4 rounded-2xl bg-[var(--primary)] font-bold text-sm tracking-widest text-white hover:bg-indigo-500 shadow-lg shadow-indigo-500/20 transition-all"
+              className="flex-1 px-6 py-4 rounded-2xl bg-[var(--primary)] font-bold text-sm tracking-widest text-white hover:bg-indigo-500 shadow-lg shadow-indigo-500/20 transition-all hover:cursor-pointer"
             >
               REGISTER
             </button>

@@ -121,7 +121,7 @@ const VisitsPage = () => {
           </div>
           <Button 
             onClick={() => setIsModalOpen(true)}
-            className="flex items-center gap-2 shrink-0 py-2.5"
+            className="flex items-center gap-2 shrink-0 py-2.5 hover:cursor-pointer"
           >
             <Plus size={16} />
             Add Visit
@@ -192,7 +192,7 @@ const VisitsPage = () => {
                 <div className="flex items-center justify-end gap-2 shrink-0 self-end md:self-auto">
                     <button 
                       onClick={() => handleDeleteVisit(visit.id)}
-                      className="p-2 text-rose-500/40 hover:text-rose-500 hover:bg-rose-500/10 rounded-lg transition-all"
+                      className="p-2 text-rose-500/40 hover:text-rose-500 hover:bg-rose-500/10 rounded-lg transition-all hover:cursor-pointer"
                     >
                       <Trash2 size={16} />
                     </button>
@@ -206,7 +206,7 @@ const VisitsPage = () => {
               <div className="w-20 h-20 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-6">
                 <LayoutDashboard size={32} className="text-[var(--text-dim)]" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Null Activity Stream</h3>
+              <h3 className="text-xl font-bold mb-2">No Activity </h3>
               <p className="text-[var(--text-muted)] text-sm">No medical logs discovered within the current temporal frame.</p>
             </div>
           )}
@@ -262,13 +262,13 @@ const VisitsPage = () => {
             <button 
               type="button" 
               onClick={() => setIsModalOpen(false)} 
-              className="flex-1 px-6 py-4 rounded-2xl border border-[var(--border)] font-bold text-sm tracking-widest text-[var(--text-muted)] hover:bg-white/5 transition-all"
+              className="flex-1 px-6 py-4 rounded-2xl border border-[var(--border)] font-bold text-sm tracking-widest text-[var(--text-muted)] hover:bg-white/5 transition-all hover:cursor-pointer"
             >
               CANCEL
             </button>
             <button 
               type="submit" 
-              className="flex-1 px-6 py-4 rounded-2xl bg-indigo-500 font-bold text-sm tracking-widest text-white hover:bg-indigo-600 shadow-xl shadow-indigo-500/20 transition-all"
+              className="flex-1 px-6 py-4 rounded-2xl bg-indigo-500 font-bold text-sm tracking-widest text-white hover:bg-indigo-600 shadow-xl shadow-indigo-500/20 transition-all hover:cursor-pointer"
             >
               Submit
             </button>

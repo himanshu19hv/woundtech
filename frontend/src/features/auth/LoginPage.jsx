@@ -78,7 +78,8 @@ const LoginPage = () => {
 
             <Button
               type="submit"
-              className="w-full max-w-[280px] py-4 text-[10px] uppercase tracking-[0.3em]"
+              className="w-full max-w-[280px] py-4 text-[10px] uppercase tracking-[0.3em] hover:cursor-pointer"
+              style={{ marginTop: 12 , padding: 12}}
             >
               Submit
               <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
