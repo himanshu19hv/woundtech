@@ -1,4 +1,4 @@
-# Patient Visit Tracker (Nexus Health)
+# Patient Visit Tracker (WoundTech Health)
 
 A premium, full-stack medical visit tracking system designed for healthcare administrators to manage clinicians, patients, and their interactions.
 
