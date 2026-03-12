@@ -27,7 +27,7 @@ describe('Visits API', () => {
     if (patientId) await db.query('DELETE FROM patients WHERE id = $1', [patientId]);
   });
 
-  it('should create a new visit', async () => {
+  it('create a new visit', async () => {
     const res = await request(app)
       .post('/api/visits')
       .send({
@@ -35,13 +35,13 @@ describe('Visits API', () => {
         patientId,
         notes: 'Initial visit'
       });
-    
+
     expect(res.statusCode).toEqual(201);
     expect(res.body).toHaveProperty('id');
     visitId = res.body.id;
   });
 
-  it('should get all visits', async () => {
+  it('get all visits', async () => {
     const res = await request(app).get('/api/visits');
     expect(res.statusCode).toEqual(200);
     expect(Array.isArray(res.body)).toBeTruthy();
